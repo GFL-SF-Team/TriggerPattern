@@ -4,7 +4,7 @@
  * @Description:
  *		Serves as the Data Accessor layer of the 'Trigger Pattern' tool
  */
-public without sharing class Util_TriggerPattern_DataAccesssor {
+public without sharing class Util_TriggerPattern_DataAccessor {
 
 	/*
 	 * @Author: Aleksandr Shcherbanyuk

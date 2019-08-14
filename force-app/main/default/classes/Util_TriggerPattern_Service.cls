@@ -44,7 +44,8 @@ public with sharing class Util_TriggerPattern_Service {
 		Map<String, Util_ITriggerHandler[]> resultMap = new Map<String, Util_ITriggerHandler[]>();
 
 		try {
-			Map<String, Trigger_Handler_Assignment__mdt[]> assignments = getAssignmentsByExecutionType(Util_TriggerPattern_DataAccesssor.getObjectTriggerHandlersAssignments(objectName));
+			Map<String, Trigger_Handler_Assignment__mdt[]> assignments = getAssignmentsByExecutionType(
+					Util_TriggerPattern_DataAccessor.getObjectTriggerHandlersAssignments(objectName));
 
 			for (String key : assignments.keySet()) {
 

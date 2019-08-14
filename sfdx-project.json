@@ -4,8 +4,8 @@
             "path": "force-app",
             "default": true,
             "package": "Trigger_Pattern",
-            "versionName": "Version 1.0",
-            "versionNumber": "1.0.0.NEXT"
+            "versionName": "Version 4.0",
+            "versionNumber": "4.0.0.NEXT"
         }
     ],
     "namespace": "",
@@ -13,6 +13,9 @@
     "sourceApiVersion": "46.0",
     "packageAliases": {
         "Trigger_Pattern": "0Ho2p000000PAvlCAG",
-        "Trigger_Pattern@1.0.0-1": "04t2p000001WCMPAA4"
+        "Trigger_Pattern@1.0.0-1": "04t2p000001WCMPAA4",
+        "Trigger_Pattern@1.0.0-2": "04t2p000001WCQmAAO",
+        "Trigger_Pattern@1.0.0-3": "04t2p000001WCQrAAO",
+        "Trigger_Pattern@4.0.0-1": "04t2p000001WCQwAAO"
     }
 }

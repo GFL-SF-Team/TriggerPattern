@@ -13,7 +13,7 @@ Before you can get to the good stuff, let’s make sure you have everything set 
 
 #### Install the Package Version in an Org
 
-Trigger Pattern is a released package version. You can install it in any org by package alias e.g. - "Trigger_Pattern@1.0.0-1". 
+Trigger Pattern is a released package version. You can install it in any org by package alias e.g. - "Trigger_Pattern@14.0.0-1". 
 You can find current Version in [sfdx-project.json file](https://github.com/GFL-SF-Team/TriggerPattern/blob/master/sfdx-project.json)
 packageAliases section.
 
@@ -27,7 +27,7 @@ sfdx force:auth:web:login -d -a YourDevHubName
 - Install the package version
 
 ```sfdx cli
-sfdx force:package:install --wait 10 --publishwait 10 --package Trigger_Pattern@1.0.0-1 -k TriggerPattern -r -u YourDevHubName
+sfdx force:package:install --wait 10 --publishwait 10 --package Trigger_Pattern@4.0.0-1 -k TriggerPattern -r -u YourDevHubName
 ```
 **-k** - installation key for key-protected package - "TriggerPattern";
 
