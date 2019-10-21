@@ -3,14 +3,11 @@
  * @Date: 31/07/2019
  * @Description:
  *		API for 'Trigger Pattern'. It provides functionality for retrieving the handlers instances that are assigned to an object
+ * @History:
+ *	- Pavel Riabov 21.10.19 removed static property objectName
  */
 
 public class Util_TriggerPattern_API {
-
-	/*
-	 * objectName - Object Api Name
-	 */
-	private static String objectName = getObjectName();
 
 	/*
 	 * @Author: Aleksandr Shcherbanyuk
@@ -19,6 +16,7 @@ public class Util_TriggerPattern_API {
 	 * 		Implements the general template that a trigger can have to execute all the handlers.
 	 */
 	public static void executeObjectTriggerHandlers() {
+		String objectName = getObjectName();
 		Util_TriggerPattern_Service.initObjectTriggerHandlers(objectName);
 	}
 
@@ -30,17 +28,13 @@ public class Util_TriggerPattern_API {
 	 */
 	private static String getObjectName() {
 
-		if (objectName == null) {
-
-			if (Trigger.new != null) {
-				objectName = Trigger.new.getSObjectType().getDescribe().getName();
-			}
-			else if (Trigger.old != null) {
-				objectName = Trigger.old.getSObjectType().getDescribe().getName();
-			}
-
+		if (Trigger.new != null) {
+			objectName = Trigger.new.getSObjectType().getDescribe().getName();
+		}
+		else if (Trigger.old != null) {
+			objectName = Trigger.old.getSObjectType().getDescribe().getName();
 		}
 
-		return objectName;
+		return null;
 	}
 }
