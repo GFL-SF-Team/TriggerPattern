@@ -29,10 +29,10 @@ public class Util_TriggerPattern_API {
 	private static String getObjectName() {
 
 		if (Trigger.new != null) {
-			objectName = Trigger.new.getSObjectType().getDescribe().getName();
+			return Trigger.new.getSObjectType().getDescribe().getName();
 		}
 		else if (Trigger.old != null) {
-			objectName = Trigger.old.getSObjectType().getDescribe().getName();
+			return Trigger.old.getSObjectType().getDescribe().getName();
 		}
 
 		return null;
